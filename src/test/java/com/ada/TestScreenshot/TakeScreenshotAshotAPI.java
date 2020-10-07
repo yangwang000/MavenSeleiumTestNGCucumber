@@ -1,4 +1,4 @@
-package com.ada.WebdriverDemo;
+package com.ada.TestScreenshot;
 
 import java.io.File;
 import java.io.IOException;
