@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" thread-count="2" parallel="tests">
-    <!--
+<suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="/Users/yangwang/IdeaProjects/MavenSeleiumTestNG">
         <classes>
             <class name="com.ada.WebdriverDemo.NewTest">
@@ -11,7 +10,11 @@
             </class>
         </classes>
     </test>
-    -->
+</suite>
+
+<!-- Cross browser test
+
+<suite name="All Test Suite" thread-count="2" parallel="tests">
     <test name="ChromeTest">
             <parameter name="browser" value="Chrome">
                 <classes>
@@ -27,3 +30,5 @@
         </parameter>
     </test>
 </suite>
+
+-->
