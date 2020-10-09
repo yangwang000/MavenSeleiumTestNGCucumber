@@ -1,4 +1,4 @@
-package com.ada.TestDataOperation;
+package com.ada.DataPropertiesOperation;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -34,7 +34,7 @@ public class HybridExecuteTest {
     @DataProvider(name = "hybridData")
     public Object[][] getDataFromDataprovider() throws IOException {
         Object[][] object = null;
-        ReadGuru99ExcelFile file = new ReadGuru99ExcelFile();
+        ReadExcelFile file = new ReadExcelFile();
 //Read keyword sheet
         Sheet guru99Sheet = file.readExcel(System.getProperty("user.dir"), "TestCase.xlsx", "KeywordFramework");
 //Find number of rows in excel file

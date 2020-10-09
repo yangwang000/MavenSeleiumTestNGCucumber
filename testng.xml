@@ -18,14 +18,14 @@
     <test name="ChromeTest">
             <parameter name="browser" value="Chrome">
                 <classes>
-                    <class name="com.ada.WebdriverDemo.CrossBrowserTest"></class>
+                    <class name="com.ada.WebdriverDemo.CrossBrowserTestDemo"></class>
                 </classes>
             </parameter>
     </test>
     <test name="FirefoxText">
         <parameter name="browser" value="Firfox">
             <classes>
-                <class name="com.ada.WebdriverDemo.CrossBrowserTest"></class>
+                <class name="com.ada.WebdriverDemo.CrossBrowserTestDemo"></class>
             </classes>
         </parameter>
     </test>
