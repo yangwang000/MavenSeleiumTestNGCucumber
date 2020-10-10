@@ -1,4 +1,4 @@
-package com.ada.TestDataOperation;
+package com.ada.DataPropertiesOperation;
 
 import java.io.File;
 import java.io.FileInputStream;

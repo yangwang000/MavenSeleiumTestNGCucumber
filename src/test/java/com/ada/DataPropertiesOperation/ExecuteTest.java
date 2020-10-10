@@ -1,4 +1,4 @@
-package com.ada.TestDataOperation;
+package com.ada.DataPropertiesOperation;
 
 import java.util.Properties;
 
@@ -18,7 +18,7 @@ public class ExecuteTest {
         String driverPath = "/Users/yangwang/Documents/Utils/chromedriver";
         System.setProperty("webdriver.chrome.driver", driverPath);
         WebDriver webdriver = new ChromeDriver();
-        ReadGuru99ExcelFile file = new ReadGuru99ExcelFile();
+        ReadExcelFile file = new ReadExcelFile();
         ReadObject object = new ReadObject();
         Properties allObjects = object.getObjectRepository();
         UIOperation operation = new UIOperation(webdriver);

@@ -18,8 +18,7 @@ public class NewTest {
     }
     @BeforeTest
     public void beforeTest() {
-        String driverPath = "/Users/yangwang/Documents/Utils/chromedriver";
-        System.setProperty("webdriver.chrome.driver", driverPath);
+        System.setProperty("webdriver.chrome.driver", "/Users/yangwang/Documents/Utils/chromedriver");
         driver = new ChromeDriver();
     }
     @AfterTest
