@@ -15,9 +15,11 @@ public class ExecuteTest {
     @Test
     public void testLogin() throws Exception {
         // TODO Auto-generated method stub
+        // to make macos trust chromedriver binary : xattr -d com.apple.quarantine /Users/yangwang/Documents/Utils/chromedriver
         String driverPath = "/Users/yangwang/Documents/Utils/chromedriver";
         System.setProperty("webdriver.chrome.driver", driverPath);
         WebDriver webdriver = new ChromeDriver();
+
         ReadExcelFile file = new ReadExcelFile();
         ReadObject object = new ReadObject();
         Properties allObjects = object.getObjectRepository();
@@ -43,6 +45,7 @@ public class ExecuteTest {
                 System.out.println("New Testcase->" + row.getCell(0).toString() + " Started");
             }
         }
+        webdriver.close();
     }
 
 }

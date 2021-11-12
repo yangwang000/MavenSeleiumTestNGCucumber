@@ -12,7 +12,7 @@ public class ReadObject {
  
 	public Properties getObjectRepository() throws IOException{
 		//Read object repository file
-		InputStream stream = new FileInputStream(new File(System.getProperty("user.dir")+"/src/test/java/com/ada/TestDataOperation/object.properties"));
+		InputStream stream = new FileInputStream(new File(System.getProperty("user.dir")+"/src/test/java/com/ada/DataPropertiesOperation/object.properties"));
 		//load all objects
 		p.load(stream);
 		return p;

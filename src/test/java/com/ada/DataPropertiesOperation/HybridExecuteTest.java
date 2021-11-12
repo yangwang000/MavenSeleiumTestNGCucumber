@@ -28,8 +28,7 @@ public class HybridExecuteTest {
         //Call perform function to perform operation on UI
         operation.perform(allObjects, keyword, objectName,
                 objectType, value);
-
-    }
+        }
 
     @DataProvider(name = "hybridData")
     public Object[][] getDataFromDataprovider() throws IOException {
