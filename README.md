@@ -1,3 +1,3 @@
 # Webtesting Must Knows
 
-1. xPath operators 
+1. xPath operator types
