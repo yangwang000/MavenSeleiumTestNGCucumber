@@ -1,2 +1,2 @@
 # Webtesting Must Knows
-verify webdriver: xattr -d com.apple.quarantine [name-of-executable]
+verify webdriver binary on macos : xattr -d com.apple.quarantine [name-of-executable]
