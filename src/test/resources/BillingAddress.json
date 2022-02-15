@@ -1,0 +1,10 @@
+{
+  "firstName": "demo",
+  "lastName": "user",
+  "country": "United States (US)",
+  "streetAddress": "Rome",
+  "city": "Rome",
+  "state": "Alabama",
+  "zipCode": "12345",
+  "email": "demo@gmail.com"
+}
