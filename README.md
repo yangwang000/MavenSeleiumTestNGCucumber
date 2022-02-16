@@ -1,5 +1,3 @@
-verify webdriver binary on macos : xattr -d com.apple.quarantine [name-of-executable]
-
 ## Css Selector Cheat Sheet
 ```
 ID, Class, Attribute, Sub-String, Child, Sibling, Specific match, Chaining
@@ -43,3 +41,11 @@ Tag[attribute1='attribute_value1'][attribute2='attribute_value2']
 Builder Pattern
 Data Objects
 WebDriverManager
+
+## Misc
+**Verify webdriver binary on macos** : xattr -d com.apple.quarantine [name-of-executable]
+
+**Execute tests:** 
+mvn clean test -Dsurefire.suiteXmlFiles=testng_chrome.xml,testng_firefox.xml
+mvn clean test (hardcode testng file path)
+mvn clean test -DsuiteFile=testng_chrome.xml (define suiteFile property)

@@ -1,8 +1,7 @@
-package com.ada.WebdriverDemo;
+package com.ada.tests.WebdriverDemo;
 
 import java.io.*;
 import java.util.Date;
-import java.util.Set;
 import java.util.StringTokenizer;
 
 import org.openqa.selenium.By;

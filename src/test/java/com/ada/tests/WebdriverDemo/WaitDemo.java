@@ -1,4 +1,4 @@
-package com.ada.WebdriverDemo;
+package com.ada.tests.WebdriverDemo;
 
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;

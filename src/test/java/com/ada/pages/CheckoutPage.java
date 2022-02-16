@@ -3,6 +3,7 @@ package com.ada.pages;
 import com.ada.base.BasePage;
 import com.ada.objects.BillingAddress;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,6 +27,8 @@ public class CheckoutPage extends BasePage {
 	private final By overlay = By.cssSelector(".blockUI.blockOverlay");
 	private final By countryDropDown = By.id("billing_country");
 	private final By stateDropDown = By.id("billing_state");
+	private final By alternateCountryDropDown = By.id("select2-billing_country-container");
+	private final By alternateStateDropDown = By.id("select2-billing_state-container");
 
 	public CheckoutPage(WebDriver driver) {
 		super(driver);
@@ -102,14 +105,24 @@ public class CheckoutPage extends BasePage {
 	}
 
 	public CheckoutPage selectCountry(String countryName){
-		Select select = new Select(driver.findElement(countryDropDown));
-		select.selectByVisibleText(countryName);
+//		Select select = new Select(driver.findElement(countryDropDown));
+//		select.selectByVisibleText(countryName);
+		waitShort.until(ExpectedConditions.elementToBeClickable(alternateCountryDropDown)).click();
+		WebElement e = waitShort.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//li[text()='" + countryName + "']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", e);
+		e.click();
 		return this;
 	}
 
 	public CheckoutPage selectState(String stateName){
-		Select select = new Select(driver.findElement(stateDropDown));
-		select.selectByVisibleText(stateName);
+//		Select select = new Select(driver.findElement(stateDropDown));
+//		select.selectByVisibleText(stateName);
+		waitShort.until(ExpectedConditions.elementToBeClickable(alternateStateDropDown)).click();
+		WebElement e = waitShort.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//li[text()='" + stateName + "']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", e);
+		e.click();
 		return this;
 	}
 }

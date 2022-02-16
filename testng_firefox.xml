@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test name="firefox" verbose="2" preserve-order="true">
-        <parameter name="browser" value="CHROME"></parameter>
+        <parameter name="browser" value="FIREFOX"></parameter>
         <classes>
             <class name="com.ada.tests.WebdriverDemo.NewTest">
             </class>

@@ -1,4 +1,4 @@
-package com.ada.WebdriverDemo;
+package com.ada.tests.WebdriverDemo;
 
 import com.ada.base.BaseTest;
 import com.ada.objects.BillingAddress;
@@ -8,13 +8,10 @@ import com.ada.pages.CheckoutPage;
 import com.ada.pages.HomePage;
 import com.ada.pages.StorePage;
 import com.ada.utils.JsonUtils;
-import org.apache.poi.ss.formula.functions.T;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 public class NewTest extends BaseTest {
     @Test
@@ -24,8 +21,9 @@ public class NewTest extends BaseTest {
         Product product = new Product(1215);
 
         StorePage storePage = new HomePage(driver).
-                load().navigateToStoreUsingMenue()
-                .enterTextInSearchFld(searchFor).clickSearchBtn();
+                load().navigateToStoreUsingMenue();
+        Thread.sleep(2000);
+        storePage.enterTextInSearchFld(searchFor).clickSearchBtn();
         Thread.sleep(2000);
         Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
 

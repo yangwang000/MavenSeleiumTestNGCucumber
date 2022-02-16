@@ -1,4 +1,4 @@
-package com.ada.WebdriverDemo;
+package com.ada.tests.WebdriverDemo;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -15,7 +15,7 @@ public class CrossBrowserTestDemo {
 
     WebDriver driver;
     /**
-     * This function will execute before each Test tag in testng.xml
+     * This function will execute before each Test tag in testng_chrome.xml
      * @param browser
      * @throws Exception
      */
