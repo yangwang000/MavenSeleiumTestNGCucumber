@@ -1,6 +1,4 @@
-package com.ada.DataPropertiesOperation;
-
-import java.util.Properties;
+package com.ada.utils.DataPropertiesOperation;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -19,8 +17,6 @@ public class ExecuteTest {
         System.setProperty("webdriver.chrome.driver", driverPath);
         WebDriver webdriver = new ChromeDriver();
         ReadExcelFile file = new ReadExcelFile();
-        ReadObject object = new ReadObject();
-        Properties allObjects = object.getObjectRepository();
         UIOperation operation = new UIOperation(webdriver);
         //Read keyword sheet
         Sheet guru99Sheet = file.readExcel(System.getProperty("user.dir"), "TestCase.xlsx", "KeywordFramework");
@@ -36,8 +32,8 @@ public class ExecuteTest {
                 System.out.println(row.getCell(1).toString() + "----" + row.getCell(2).toString() + "----" +
                         row.getCell(3).toString() + "----" + row.getCell(4).toString());
                 //Call perform function to perform operation on UI
-                operation.perform(allObjects, row.getCell(1).toString(), row.getCell(2).toString(),
-                        row.getCell(3).toString(), row.getCell(4).toString());
+//                operation.perform(allObjects, row.getCell(1).toString(), row.getCell(2).toString(),
+//                        row.getCell(3).toString(), row.getCell(4).toString());
             } else {
                 //Print the new  testcase name when it started
                 System.out.println("New Testcase->" + row.getCell(0).toString() + " Started");

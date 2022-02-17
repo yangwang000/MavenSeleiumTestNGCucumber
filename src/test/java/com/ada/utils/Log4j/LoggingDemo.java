@@ -1,4 +1,4 @@
-package com.ada.Log4j;
+package com.ada.utils.Log4j;
 
 import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.By;

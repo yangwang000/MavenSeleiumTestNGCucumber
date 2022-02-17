@@ -1,7 +1,6 @@
-package com.ada.DataPropertiesOperation;
+package com.ada.utils.DataPropertiesOperation;
 
 import java.io.IOException;
-import java.util.Properties;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -22,12 +21,10 @@ public class HybridExecuteTest {
             System.setProperty("webdriver.chrome.driver", driverPath);
             webdriver = new ChromeDriver();
         }
-        ReadObject object = new ReadObject();
-        Properties allObjects = object.getObjectRepository();
         UIOperation operation = new UIOperation(webdriver);
         //Call perform function to perform operation on UI
-        operation.perform(allObjects, keyword, objectName,
-                objectType, value);
+//        operation.perform(allObjects, keyword, objectName,
+//                objectType, value);
 
     }
 

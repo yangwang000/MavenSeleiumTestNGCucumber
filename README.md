@@ -38,9 +38,15 @@ Tag[attribute1='attribute_value1'][attribute2='attribute_value2']
 ```
 
 ## Best Practice
+Encouraged behaviors : https://www.selenium.dev/documentation/test_practices/encouraged/
+
 Builder Pattern
+
 Data Objects
+
 WebDriverManager
+
+Config Properties: can be used for global variables that are required to be initialized only once and shared across the framework.
 
 ## Misc
 **Verify webdriver binary on macos** : xattr -d com.apple.quarantine [name-of-executable]

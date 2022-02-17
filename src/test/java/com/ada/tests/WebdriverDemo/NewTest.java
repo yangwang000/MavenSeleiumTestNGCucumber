@@ -20,7 +20,7 @@ public class NewTest extends BaseTest {
         BillingAddress billingAddress = JsonUtils.deserializeJson("BillingAddress.json", BillingAddress.class);
         Product product = new Product(1215);
 
-        StorePage storePage = new HomePage(driver).
+        StorePage storePage = new HomePage(getDriver()).
                 load().navigateToStoreUsingMenue();
         Thread.sleep(2000);
         storePage.enterTextInSearchFld(searchFor).clickSearchBtn();

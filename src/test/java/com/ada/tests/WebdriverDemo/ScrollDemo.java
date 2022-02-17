@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class ScrollDemo {
     WebDriver driver;
 
-    @Test
+//    @Test
     public void ByPixel() {
         System.setProperty("webdriver.chrome.driver", "/Users/yangwang/Documents/Utils/chromedriver");
         driver = new ChromeDriver();
@@ -20,7 +20,7 @@ public class ScrollDemo {
         // This  will scroll down the page by  1000 pixel vertical
         js.executeScript("window.scrollBy(0,1000)");
     }
-    @Test
+//    @Test
     public void ByVisibleElement() {
         System.setProperty("webdriver.chrome.driver", "/Users/yangwang/Documents/Utils/chromedriver");
         driver = new ChromeDriver();
@@ -30,7 +30,7 @@ public class ScrollDemo {
         //This will scroll the page till the element is found
         js.executeScript("arguments[0].scrollIntoView();", Element);
     }
-    @Test
+//    @Test
     public void ByPage() {
         System.setProperty("webdriver.chrome.driver", "/Users/yangwang/Documents/Utils/chromedriver");
         driver = new ChromeDriver();
@@ -39,7 +39,7 @@ public class ScrollDemo {
         //This will scroll the web page till end.
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
     }
-    @Test
+//    @Test
     public void ScrollHorizontally() {
         System.setProperty("webdriver.chrome.driver", "/Users/yangwang/Documents/Utils/chromedriver");
         driver = new ChromeDriver();

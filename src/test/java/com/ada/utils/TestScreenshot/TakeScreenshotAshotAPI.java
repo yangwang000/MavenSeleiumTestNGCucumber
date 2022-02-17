@@ -1,4 +1,4 @@
-package com.ada.TestScreenshot;
+package com.ada.utils.TestScreenshot;
 
 import java.io.File;
 import java.io.IOException;

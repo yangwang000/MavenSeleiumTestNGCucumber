@@ -1,4 +1,4 @@
-package com.ada.DataPropertiesOperation;
+package com.ada.utils.DataPropertiesOperation;
 
 import  java.sql.Connection;
 import  java.sql.Statement;

@@ -25,7 +25,7 @@ public class TestAjaxDemo {
         driver.navigate().to(URL);
     }
 
-    @Test
+//    @Test
     public void test_AjaxExample() {
         By container = By.cssSelector(".container");
         wait = new WebDriverWait(driver, 5);

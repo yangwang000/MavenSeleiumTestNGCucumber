@@ -1,5 +1,6 @@
 package com.ada.base;
 
+import com.ada.utils.ConfigLoader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +20,7 @@ public class BasePage {
 	}
 
 	public void load(String endPoint){
-		driver.get("https://askomdch.com" + endPoint);
+		driver.get(ConfigLoader.getInstance().getBaseUrl() + endPoint);
 	}
 
 	public void waitForOverlaysToDisappear(By overlay){

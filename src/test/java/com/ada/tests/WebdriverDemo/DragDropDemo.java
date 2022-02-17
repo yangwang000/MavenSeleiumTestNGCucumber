@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class DragDropDemo {
     WebDriver driver;
 
-    @Test
+//    @Test
     public void DragDropByElement()
     {
         System.setProperty("webdriver.chrome.driver", "/Users/yangwang/Documents/Utils/chromedriver");
@@ -28,7 +28,7 @@ public class DragDropDemo {
         act.dragAndDrop(fromElement, toElement).build().perform();
     }
 
-    @Test
+//    @Test
     public void DragDropByPixel()
     {
         System.setProperty("webdriver.chrome.driver", "/Users/yangwang/Documents/Utils/chromedriver");
@@ -45,7 +45,7 @@ public class DragDropDemo {
         act.dragAndDropBy(fromElement,135, 40).build().perform();
     }
 
-    @Test
+//    @Test
     public void DragDropVerify()
     {
         System.setProperty("webdriver.chrome.driver", "/Users/yangwang/Documents/Utils/chromedriver");

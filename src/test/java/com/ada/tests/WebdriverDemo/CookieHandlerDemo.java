@@ -10,23 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Cookie;
 
 public class CookieHandlerDemo {
-
-    public static void main(String[] args){
-        readCookie();
-        /*
-        System.setProperty("webdriver.chrome.driver","/Users/yangwang/Documents/Utils/chromedriver");
-        WebDriver driver = new ChromeDriver();
-        try {
-            driver.get("http://www.example.com");
-
-            // Adds the cookie into current browser context
-            driver.manage().addCookie(new Cookie("key", "value"));
-        } finally {
-            driver.quit();
-        }
-        */
-    }
-
     public static void writeCookie(String[] args)
     {
         WebDriver driver;

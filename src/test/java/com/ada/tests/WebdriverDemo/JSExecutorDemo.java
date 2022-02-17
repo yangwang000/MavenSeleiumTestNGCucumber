@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class JSExecutorDemo {
 
-    @Test
+//    @Test
     public void LoginAsync()
     {
         System.setProperty("webdriver.chrome.driver","/Users/yangwang/Documents/Utils/chromedriver");
@@ -33,7 +33,7 @@ public class JSExecutorDemo {
         driver.quit();
     }
 
-    @Test
+//    @Test
     public void LoginJSClick()
     {
         System.setProperty("webdriver.chrome.driver","/Users/yangwang/Documents/Utils/chromedriver");
@@ -55,7 +55,7 @@ public class JSExecutorDemo {
         js.executeScript("alert('Welcome to Guru99');");
     }
 
-    @Test
+//    @Test
     public void login()
     {
         System.setProperty("webdriver.chrome.driver","/Users/yangwang/Documents/Utils/chromedriver");
@@ -84,7 +84,7 @@ public class JSExecutorDemo {
         js.executeScript("window.location = 'http://demo.guru99.com/'");
     }
 
-    @Test
+//    @Test
     public void JSScroll()
     {
         System.setProperty("webdriver.chrome.driver","/Users/yangwang/Documents/Utils/chromedriver");

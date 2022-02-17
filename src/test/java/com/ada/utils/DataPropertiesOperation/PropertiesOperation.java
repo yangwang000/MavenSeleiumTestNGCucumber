@@ -1,4 +1,4 @@
-package com.ada.DataPropertiesOperation;
+package com.ada.utils.DataPropertiesOperation;
 
 import java.io.FileInputStream;
 import java.io.IOException;

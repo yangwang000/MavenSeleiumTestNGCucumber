@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class RobotClassDemo {
 
-    @Test
+//    @Test
     public static void  execution() throws InterruptedException, AWTException {
         System.setProperty("webdriver.chrome.driver","/Users/yangwang/Documents/Utils/chromedriver");
         WebDriver driver = new ChromeDriver();
