@@ -1,4 +1,4 @@
-package com.ada.tests.WebdriverDemo;
+package com.ada.tests.WebdriverOperations;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -6,7 +6,6 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
 public class RobotClassDemo {
 

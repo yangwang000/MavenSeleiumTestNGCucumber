@@ -1,4 +1,4 @@
-package com.ada.tests.WebdriverDemo;
+package com.ada.tests.WebdriverOperations;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

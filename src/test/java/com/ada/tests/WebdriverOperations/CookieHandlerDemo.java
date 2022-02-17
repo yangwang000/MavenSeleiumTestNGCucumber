@@ -1,4 +1,4 @@
-package com.ada.tests.WebdriverDemo;
+package com.ada.tests.WebdriverOperations;
 
 import java.io.*;
 import java.util.Date;

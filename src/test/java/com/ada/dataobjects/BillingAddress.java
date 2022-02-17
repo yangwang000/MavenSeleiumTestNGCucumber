@@ -1,6 +1,4 @@
-package com.ada.objects;
-
-import org.openqa.selenium.By;
+package com.ada.dataobjects;
 
 public class BillingAddress {
 	private String firstName;

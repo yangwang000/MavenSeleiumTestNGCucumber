@@ -1,4 +1,4 @@
-package com.ada.objects;
+package com.ada.dataobjects;
 
 import com.ada.utils.JsonUtils;
 

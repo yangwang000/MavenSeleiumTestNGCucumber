@@ -1,17 +1,12 @@
 package com.ada.pages;
 
 import com.ada.base.BasePage;
-import com.ada.objects.BillingAddress;
+import com.ada.dataobjects.BillingAddress;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
-import java.util.List;
 
 public class CheckoutPage extends BasePage {
 	private final By firstNameFld = By.id("billing_first_name");

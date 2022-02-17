@@ -4,14 +4,14 @@
     <test name="chrome" verbose="2" preserve-order="true" parallel="methods" thread-count="2">
         <parameter name="browser" value="CHROME"></parameter>
         <classes>
-            <class name="com.ada.tests.WebdriverDemo.NewTest">
+            <class name="com.ada.tests.Demo.NewTest">
             </class>
         </classes>
     </test>
 <!--    <test name="firefox" verbose="2" preserve-order="true" parallel="methods" thread-count="2">-->
 <!--        <parameter name="browser" value="FIREFOX"></parameter>-->
 <!--        <classes>-->
-<!--            <class name="com.ada.tests.WebdriverDemo.NewTest">-->
+<!--            <class name="com.ada.tests.Demo.NewTest">-->
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->
@@ -23,14 +23,14 @@
     <test name="ChromeTest">
             <parameter name="browser" value="Chrome">
                 <classes>
-                    <class name="com.ada.tests.WebdriverDemo.CrossBrowserTestDemo"></class>
+                    <class name="com.ada.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
                 </classes>
             </parameter>
     </test>
     <test name="FirefoxText">
         <parameter name="browser" value="Firfox">
             <classes>
-                <class name="com.ada.tests.WebdriverDemo.CrossBrowserTestDemo"></class>
+                <class name="com.ada.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
             </classes>
         </parameter>
     </test>

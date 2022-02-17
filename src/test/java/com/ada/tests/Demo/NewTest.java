@@ -1,8 +1,8 @@
-package com.ada.tests.WebdriverDemo;
+package com.ada.tests.Demo;
 
 import com.ada.base.BaseTest;
-import com.ada.objects.BillingAddress;
-import com.ada.objects.Product;
+import com.ada.dataobjects.BillingAddress;
+import com.ada.dataobjects.Product;
 import com.ada.pages.CartPage;
 import com.ada.pages.CheckoutPage;
 import com.ada.pages.HomePage;

@@ -1,4 +1,4 @@
-package com.ada.objects;
+package com.ada.dataobjects;
 
 public class User {
     private String username;

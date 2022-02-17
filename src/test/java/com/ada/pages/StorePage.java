@@ -5,9 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class StorePage extends BasePage {
 	private final By searchFld = By.cssSelector("#woocommerce-product-search-field-0");
@@ -53,11 +50,14 @@ public class StorePage extends BasePage {
 	}
 
 	public CartPage clickViewCart(){
+		waitLong.until(ExpectedConditions.visibilityOfElementLocated(viewCartLink));
 		WebElement viewCartLinkElement = driver.findElement(viewCartLink);
-		waitShort.until(
-				ExpectedConditions.visibilityOf(viewCartLinkElement)
-		);
 		viewCartLinkElement.click();
 		return new CartPage(driver);
+	}
+
+	public StorePage load(){
+		load("/store");
+		return this;
 	}
 }
