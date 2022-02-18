@@ -48,14 +48,16 @@ WebDriverManager
 
 Config Properties: can be used for global variables that are required to be initialized only once and shared across the framework.
 
-Atomic Tests
+Atomic Tests 
 
 ## Misc
 **Verify webdriver binary on macos** : xattr -d com.apple.quarantine [name-of-executable]
 
 **Execute tests:** 
 mvn clean test -Dsurefire.suiteXmlFiles=testng_chrome.xml,testng_firefox.xml
+
 mvn clean test (hardcode testng file path)
+
 mvn clean test -DsuiteFile=testng_chrome.xml (define suiteFile property)
 
 **Explicit Wait For Page To Load Strategies:**

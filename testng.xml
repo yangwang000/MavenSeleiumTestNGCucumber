@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" parallel="tests" thread-count="2">
-    <test name="chrome" verbose="2" preserve-order="true" parallel="methods" thread-count="2">
-        <parameter name="browser" value="CHROME"></parameter>
-        <classes>
-            <class name="com.ada.tests.Demo.NewTest">
-            </class>
-        </classes>
+    <test name="chrome" verbose="2" preserve-order="true" parallel="methods" thread-count="5">
+        <parameter name="browser" value="FIREFOX"></parameter>
+        <packages>
+            <package name="com.ada.demo.tests.Demo"></package>
+        </packages>
     </test>
 <!--    <test name="firefox" verbose="2" preserve-order="true" parallel="methods" thread-count="2">-->
 <!--        <parameter name="browser" value="FIREFOX"></parameter>-->
 <!--        <classes>-->
-<!--            <class name="com.ada.tests.Demo.NewTest">-->
+<!--            <class name="NewTest">-->
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->
@@ -23,14 +22,14 @@
     <test name="ChromeTest">
             <parameter name="browser" value="Chrome">
                 <classes>
-                    <class name="com.ada.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
+                    <class name="com.ada.demo.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
                 </classes>
             </parameter>
     </test>
     <test name="FirefoxText">
         <parameter name="browser" value="Firfox">
             <classes>
-                <class name="com.ada.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
+                <class name="com.ada.demo.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
             </classes>
         </parameter>
     </test>

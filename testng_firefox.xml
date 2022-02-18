@@ -4,7 +4,7 @@
     <test name="firefox" verbose="2" preserve-order="true">
         <parameter name="browser" value="FIREFOX"></parameter>
         <classes>
-            <class name="com.ada.tests.Demo.NewTest">
+            <class name="NewTest">
             </class>
         </classes>
     </test>
@@ -16,14 +16,14 @@
     <test name="ChromeTest">
             <parameter name="browser" value="Chrome">
                 <classes>
-                    <class name="com.ada.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
+                    <class name="com.ada.demo.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
                 </classes>
             </parameter>
     </test>
     <test name="FirefoxText">
         <parameter name="browser" value="Firfox">
             <classes>
-                <class name="com.ada.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
+                <class name="com.ada.demo.tests.WebdriverOperations.CrossBrowserTestDemo"></class>
             </classes>
         </parameter>
     </test>
