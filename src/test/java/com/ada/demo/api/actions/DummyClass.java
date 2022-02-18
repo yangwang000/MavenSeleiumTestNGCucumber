@@ -1,6 +1,6 @@
 package com.ada.demo.api.actions;
 
-import com.ada.demo.dataobjects.User;
+import com.ada.demo.dataObjects.User;
 import com.ada.demo.utils.FakerUtils;
 
 public class DummyClass {

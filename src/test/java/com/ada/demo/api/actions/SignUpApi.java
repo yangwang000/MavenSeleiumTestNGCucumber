@@ -1,7 +1,7 @@
 package com.ada.demo.api.actions;
 
 import com.ada.demo.api.ApiRequest;
-import com.ada.demo.dataobjects.User;
+import com.ada.demo.dataObjects.User;
 import io.restassured.http.Cookies;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;

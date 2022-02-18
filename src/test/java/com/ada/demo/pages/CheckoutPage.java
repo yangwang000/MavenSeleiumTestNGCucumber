@@ -1,8 +1,8 @@
 package com.ada.demo.pages;
 
 import com.ada.demo.base.BasePage;
-import com.ada.demo.dataobjects.BillingAddress;
-import com.ada.demo.dataobjects.User;
+import com.ada.demo.dataObjects.BillingAddress;
+import com.ada.demo.dataObjects.User;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 

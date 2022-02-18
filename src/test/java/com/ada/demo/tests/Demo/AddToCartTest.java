@@ -1,8 +1,8 @@
 package com.ada.demo.tests.Demo;
 
 import com.ada.demo.base.BaseTest;
-import com.ada.demo.dataobjects.Product;
-import com.ada.demo.dataproviders.DemoDataProvider;
+import com.ada.demo.dataObjects.Product;
+import com.ada.demo.dataProviders.DemoDataProvider;
 import com.ada.demo.pages.CartPage;
 import com.ada.demo.pages.HomePage;
 import com.ada.demo.pages.StorePage;
@@ -19,7 +19,7 @@ public class AddToCartTest extends BaseTest {
         CartPage cartPage = new StorePage(getDriver()).load().
                 getProductThumbnail().clickAddToCartBtn(product.getName()).
                 clickViewCart();
-        Assert.assertEquals(cartPage.getProductName(), product.getName());
+        Assert.assertEquals(cartPage.getProductName(), product.getName() + "aaa");
     }
 
     @Test(dataProvider = "getFeaturedProducts", dataProviderClass = DemoDataProvider.class)

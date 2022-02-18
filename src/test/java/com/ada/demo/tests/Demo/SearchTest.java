@@ -13,9 +13,7 @@ public class SearchTest extends BaseTest {
 	public void searchWithPartialMatch(){
 		String searchFor = "Blue";
 		StorePage storePage = new StorePage(getDriver())
-				.load()
-				.enterTextInSearchFld(searchFor)
-				.clickSearchBtn();
+				.load().search(searchFor);
 		WebDriverWait wait = new WebDriverWait(getDriver(), 10);
 		wait.until(ExpectedConditions.urlContains(searchFor));
 		Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");

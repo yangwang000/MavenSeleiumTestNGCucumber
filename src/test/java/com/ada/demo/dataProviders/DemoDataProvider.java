@@ -1,6 +1,6 @@
-package com.ada.demo.dataproviders;
+package com.ada.demo.dataProviders;
 
-import com.ada.demo.dataobjects.Product;
+import com.ada.demo.dataObjects.Product;
 import com.ada.demo.utils.JsonUtils;
 import org.testng.annotations.DataProvider;
 

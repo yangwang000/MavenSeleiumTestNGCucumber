@@ -1,4 +1,4 @@
-package com.ada.demo.dataobjects;
+package com.ada.demo.dataObjects;
 
 import com.ada.demo.utils.JsonUtils;
 
