@@ -1,11 +1,11 @@
 package com.ada.demo.tests.Demo;
 
-import com.ada.demo.base.BasePage;
+import com.ada.demo.base.BaseDemoPage;
 import com.ada.demo.pages.components.MyHeader;
 import com.ada.demo.pages.components.ProductThumbnail;
 import org.openqa.selenium.WebDriver;
 
-public class HomePage extends BasePage {
+public class HomeDemoPage extends BaseDemoPage {
     public MyHeader getMyHeader() {
         return myHeader;
     }
@@ -17,13 +17,13 @@ public class HomePage extends BasePage {
     private MyHeader myHeader;
     private ProductThumbnail productThumbnail;
 
-    public HomePage(WebDriver driver) {
+    public HomeDemoPage(WebDriver driver) {
         super(driver);
         myHeader = new MyHeader(driver);
         productThumbnail = new ProductThumbnail(driver);
     }
 
-    public HomePage load(){
+    public HomeDemoPage load(){
         load("/");
         return this;
     }

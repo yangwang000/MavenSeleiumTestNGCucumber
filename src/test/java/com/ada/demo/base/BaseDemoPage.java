@@ -8,12 +8,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
-public class BasePage {
+public class BaseDemoPage {
 	protected WebDriver driver;
 	protected WebDriverWait waitLong;
 	protected WebDriverWait waitShort;
 
-	public BasePage(WebDriver driver){
+	public BaseDemoPage(WebDriver driver){
 		this.driver = driver;
 		waitLong = new WebDriverWait(driver, 30);
 		waitShort = new WebDriverWait(driver, 5);

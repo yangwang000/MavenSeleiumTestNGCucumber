@@ -2,15 +2,15 @@ package com.ada.demo.tests.Demo;
 
 import com.ada.demo.api.actions.CartApi;
 import com.ada.demo.api.actions.SignUpApi;
-import com.ada.demo.base.BaseTest;
+import com.ada.demo.base.BaseDemoTest;
 import com.ada.demo.dataObjects.Product;
 import com.ada.demo.dataObjects.User;
 import com.ada.demo.utils.FakerUtils;
-import com.ada.demo.pages.CheckoutPage;
+import com.ada.demo.pages.CheckoutDemoPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseTest {
+public class LoginDemoTest extends BaseDemoTest {
 
 	@Test
 	public void loginDuringCheckout() throws Exception {
@@ -28,7 +28,7 @@ public class LoginTest extends BaseTest {
 		cartApi.addToCart(product.getId(), 1);
 
 
-		CheckoutPage checkoutPage = new CheckoutPage(getDriver()).load();
+		CheckoutDemoPage checkoutPage = new CheckoutDemoPage(getDriver()).load();
 		Thread.sleep(5000);
 		injectCookiesToBrowser(cartApi.getCookies());
 		checkoutPage.load();

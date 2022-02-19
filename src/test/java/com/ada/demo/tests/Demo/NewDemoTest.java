@@ -1,26 +1,26 @@
 package com.ada.demo.tests.Demo;
 
-import com.ada.demo.base.BaseTest;
+import com.ada.demo.base.BaseDemoTest;
 import com.ada.demo.dataObjects.BillingAddress;
 import com.ada.demo.dataObjects.Product;
-import com.ada.demo.pages.CartPage;
-import com.ada.demo.pages.CheckoutPage;
-import com.ada.demo.pages.HomePage;
-import com.ada.demo.pages.StorePage;
+import com.ada.demo.pages.CartDemoPage;
+import com.ada.demo.pages.CheckoutDemoPage;
+import com.ada.demo.pages.HomeDemoPage;
+import com.ada.demo.pages.StoreDemoPage;
 import com.ada.demo.utils.JsonUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class NewTest extends BaseTest {
+public class NewDemoTest extends BaseDemoTest {
     @Test
     public void testEasy() throws IOException, InterruptedException {
         String searchFor = "Blue";
         BillingAddress billingAddress = JsonUtils.deserializeJson("BillingAddress.json", BillingAddress.class);
         Product product = new Product(1215);
 
-        StorePage storePage = new HomePage(getDriver()).
+        StoreDemoPage storePage = new HomeDemoPage(getDriver()).
                 load().getMyHeader().navigateToStoreUsingMenu();
         Thread.sleep(2000);
         storePage.search(searchFor);
@@ -29,9 +29,9 @@ public class NewTest extends BaseTest {
 
         storePage.getProductThumbnail().clickAddToCartBtn(product.getName());
         Thread.sleep(2000);
-        CartPage cartPage = storePage.getProductThumbnail().clickViewCart();
+        CartDemoPage cartPage = storePage.getProductThumbnail().clickViewCart();
         Assert.assertEquals(cartPage.getProductName(), product.getName());
-        CheckoutPage checkoutPage = cartPage.clickCheckoutBtn();
+        CheckoutDemoPage checkoutPage = cartPage.clickCheckoutBtn();
         checkoutPage.setBillingAddress(billingAddress);
         checkoutPage.placeOrder();
         Thread.sleep(2000);

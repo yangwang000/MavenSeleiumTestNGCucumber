@@ -27,7 +27,7 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.sql.Timestamp;
 
-public class BaseTest {
+public class BaseDemoTest {
 	private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	private void setDriver(WebDriver driver){
 		this.driver.set(driver);

@@ -2,24 +2,24 @@ package com.ada.demo.tests.Demo;
 
 import com.ada.demo.api.actions.CartApi;
 import com.ada.demo.api.actions.SignUpApi;
-import com.ada.demo.base.BaseTest;
+import com.ada.demo.base.BaseDemoTest;
 import com.ada.demo.dataObjects.BillingAddress;
 import com.ada.demo.dataObjects.Product;
 import com.ada.demo.dataObjects.User;
 import com.ada.demo.utils.FakerUtils;
-import com.ada.demo.pages.CheckoutPage;
+import com.ada.demo.pages.CheckoutDemoPage;
 import com.ada.demo.utils.JsonUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class CheckoutTest extends BaseTest {
+public class CheckoutDemoTest extends BaseDemoTest {
 
     @Test
     public void GuestCheckoutUsingDirectBankTransfer() throws IOException, InterruptedException {
         BillingAddress billingAddress = JsonUtils.deserializeJson("BillingAddress.json", BillingAddress.class);
-        CheckoutPage checkoutPage = new CheckoutPage(getDriver()).load();
+        CheckoutDemoPage checkoutPage = new CheckoutDemoPage(getDriver()).load();
 
         CartApi cartApi = new CartApi();
         cartApi.addToCart(1215, 1);
@@ -47,7 +47,7 @@ public class CheckoutTest extends BaseTest {
         Product product = new Product(1215);
         cartApi.addToCart(product.getId(), 1);
 
-        CheckoutPage checkoutPage = new CheckoutPage(getDriver()).load();
+        CheckoutDemoPage checkoutPage = new CheckoutDemoPage(getDriver()).load();
         injectCookiesToBrowser(signUpApi.getCookies());
         checkoutPage.load();
         checkoutPage.setBillingAddress(billingAddress).
