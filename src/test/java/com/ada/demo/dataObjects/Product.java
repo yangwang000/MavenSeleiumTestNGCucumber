@@ -1,6 +1,6 @@
 package com.ada.demo.dataObjects;
 
-import com.ada.demo.utils.JsonUtils;
+import com.ada.utils.JsonUtils;
 
 import java.io.IOException;
 

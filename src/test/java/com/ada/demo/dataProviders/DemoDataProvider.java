@@ -1,7 +1,7 @@
 package com.ada.demo.dataProviders;
 
 import com.ada.demo.dataObjects.Product;
-import com.ada.demo.utils.JsonUtils;
+import com.ada.utils.JsonUtils;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;

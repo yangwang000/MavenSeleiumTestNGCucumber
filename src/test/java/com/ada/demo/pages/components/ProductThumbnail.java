@@ -1,12 +1,12 @@
 package com.ada.demo.pages.components;
 
-import com.ada.demo.base.BaseDemoPage;
-import com.ada.demo.pages.CartDemoPage;
+import com.ada.base.BasePage;
+import com.ada.demo.pages.CartPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class ProductThumbnail extends BaseDemoPage {
+public class ProductThumbnail extends BasePage {
     private final By viewCartLink = By.cssSelector("a[title='View cart']");
 
     public ProductThumbnail(WebDriver driver) {
@@ -23,8 +23,8 @@ public class ProductThumbnail extends BaseDemoPage {
         return this;
     }
 
-    public CartDemoPage clickViewCart(){
+    public CartPage clickViewCart(){
         waitShort.until(ExpectedConditions.elementToBeClickable(viewCartLink)).click();
-        return new CartDemoPage(driver);
+        return new CartPage(driver);
     }
 }

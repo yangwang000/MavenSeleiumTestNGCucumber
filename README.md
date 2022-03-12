@@ -1,4 +1,15 @@
-## Css Selector Cheat Sheet
+# Notes about Selenium
+
+## Locator strategies and encouraged practices:
+(source: https://www.selenium.dev/documentation/webdriver/elements/locators/
+https://www.selenium.dev/documentation/test_practices/encouraged/locators/)
+
+**8 traditional location strategies:**
+id attribute, css selector, class name, name attribute, link text, partial link text, tag name, xpath
+
+In a word, ids are the best then the CSS selector.
+
+### Css Selector Cheat Sheet
 ```
 ID, Class, Attribute, Sub-String, Child, Sibling, Specific match, Chaining
 
