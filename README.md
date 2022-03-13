@@ -75,3 +75,13 @@ mvn clean test -DsuiteFile=testng_chrome.xml (define suiteFile property)
 1. Wait for the page title or for the URL to show up in the URL bar
 2. Wait for slowest element to load
 3. Wait for each UI element
+
+# BDD
+## 3 Practices
+Discovery, Formulation, and Automation.https://cucumber.io/docs/bdd/
+
+## Discovery workshop
+https://cucumber.io/docs/bdd/discovery-workshop/
+
+## Example Mapping
+https://cucumber.io/docs/bdd/example-mapping/
